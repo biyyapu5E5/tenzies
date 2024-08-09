@@ -1,0 +1,75 @@
+body {
+  padding: 10px;
+  background-color: #0B2434;
+  font-family: 'Karla', sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+.container { 
+  margin: auto;
+  height: 400px;
+  max-width: 400px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.die-container {
+  display: grid;
+  grid-template: auto auto/ repeat(5,1fr);
+  gap : 20px;
+}
+.die {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  font-size: 2rem;
+  font-weight: bold;
+}
+button {
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(4, 92, 87);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: block;
+}
+.title {
+  margin: 0px;
+  font-family: "Audiowide", sans-serif;
+ 
+}
+.instructions {
+  margin: 0px auto;
+  text-align: center;
+  padding: 0px 20px;
+  font-family: 'Karla', sans-serif;
+}
+.count{
+  font-family: 'Karla', sans-serif;
+  margin: 3px 0px;
+}
+
+
+@media only screen and (max-width:370px){
+  .die-container{
+    width: 300px;
+  }
+  .die{
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+} 
+
